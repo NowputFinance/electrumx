@@ -1736,6 +1736,44 @@ class PeercoinTestnet(Peercoin):
         "testnet-electrum.peercoinexplorer.net s"
     ]
 
+class Nowp(Coin):
+    NAME = "Nowp"
+    SHORTNAME = "NOWP"
+    NET = "mainnet"
+    P2PKH_VERBYTE = bytes.fromhex("35")
+    P2SH_VERBYTES = (bytes.fromhex("71"),)
+    WIF_BYTE = bytes.fromhex("8F")
+    GENESIS_HASH = ('38d6ed3dd45e8dc1f1ad8454fceb20e3'
+                    'eba51f7c209635a40b333c3460b78e7c')
+    DESERIALIZER = lib_tx.DeserializerPeercoin
+    TX_COUNT = 1691771
+    TX_COUNT_HEIGHT = 455409
+    TX_PER_BLOCK = 4
+    RPC_PORT = 6887
+    REORG_LIMIT = 5000
+    ESTIMATE_FEE = 0.01
+
+    PEERS = [
+        "electrum.nowpexplorer.net s"
+    ]
+
+    VALUE_PER_COIN = 1000000
+
+
+class NowpTestnet(Nowp):
+    NAME = "NowpTestnet"
+    SHORTNAME = "tNOWP"
+    NET = "testnet"
+    P2PKH_VERBYTE = bytes.fromhex("70")
+    P2SH_VERBYTES = (bytes.fromhex("C4"),)
+    WIF_BYTE = bytes.fromhex("EF")
+    GENESIS_HASH = ('be8c3dd0b0e8e73d476a6b802b80819e'
+                    'ba6801b3b5911bb4335b48df47c5459a')
+    ESTIMATE_FEE = 0.001
+    PEERS = [
+        "testnet-electrum.nowpexplorer.net s"
+    ]
+
 
 class Trezarcoin(Coin):
     NAME = "Trezarcoin"
