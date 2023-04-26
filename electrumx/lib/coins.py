@@ -1767,8 +1767,8 @@ class NowpTestnet(Nowp):
     P2PKH_VERBYTE = bytes.fromhex("70")
     P2SH_VERBYTES = (bytes.fromhex("C4"),)
     WIF_BYTE = bytes.fromhex("EF")
-    GENESIS_HASH = ('be8c3dd0b0e8e73d476a6b802b80819e'
-                    'ba6801b3b5911bb4335b48df47c5459a')
+    GENESIS_HASH = ('abd53e247ee6c37e9b289d7a6482e5fc'
+                    '831ebbebc31920cec91f2899877ee308')
     ESTIMATE_FEE = 0.001
     PEERS = [
         "testnet-electrum.nowpexplorer.net s"
