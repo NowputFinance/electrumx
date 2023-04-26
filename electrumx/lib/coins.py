@@ -1754,7 +1754,6 @@ class Nowp(Coin):
     ESTIMATE_FEE = 0.01
 
     PEERS = [
-        "electrum.nowpexplorer.net s"
     ]
 
     VALUE_PER_COIN = 1000000
@@ -1771,7 +1770,6 @@ class NowpTestnet(Nowp):
                     '831ebbebc31920cec91f2899877ee308')
     ESTIMATE_FEE = 0.001
     PEERS = [
-        "testnet-electrum.nowpexplorer.net s"
     ]
 
 
